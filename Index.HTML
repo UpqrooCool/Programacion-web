@@ -8,7 +8,8 @@
        <link rel="Icon" href="Icono.png" type="image/png" sizes="16x16">
        <title> Mi primera pagina web </title>
     </head>
-    <body>
+    <body   >
+        
             Hola Mundo
             <a href="#SeccionParrafo"></a>
             <h1>Titulo 1</h1>
@@ -79,9 +80,102 @@
 
         <h3>Audio</h3>
         <Audio controls src="Audio.ogg" type="Audio/ogg"></Audio>
+        <br>
         <h3>Video</h3>
         <video controls src="Video_PW.mp4"  width="350" height="250" alt="Video" ></video>
-        <h3>Iframe</h3><iframe width="560" height="315" src="https://www.youtube.com/embed/zJrg6vWeCwU?si=EMqRlKiq62L85WHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <h3>Iframe</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zJrg6vWeCwU?si=EMqRlKiq62L85WHp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Tablas</h3>
+        <Table border="1 ">
+            <head>
+                <th colspan="8">  Horario de clases</th>
+                <tr>
+                    <th>Asignatura</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+            </head>
+            <body>
+                <tr>
+                    <td>Programacion web</td>
+                    <td>12:00 P.M. a 14:00 P.M.</td>
+                    <td>13:00 P.M. a 14:00 P.M.</td>
+                    <td rowspan="3">Sin clases</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                    <td rowspan="3">Sin clases</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                </tr>
+                <tr>
+                    <td>Diseño de interfaces</td>
+                    <td>12:00 P.M. a 14:00 P.M.</td>
+                    <td>13:00 P.M. a 14:00 P.M.</td>
+                    <td>Sin clases</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+
+                  
+                </tr>
+                <tr>
+                    <td>Bases de datos</td>
+                    <td>12:00 P.M. a 14:00 P.M.</td>
+                    <td>13:00 P.M. a 14:00 P.M.</td>
+                    <td>Sin clases</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                    <td>12:00 P.M. a 2:00 P.M.</td>
+                   
+                </tr>
+                
+            </body>
+        </Table>
+<hr>
+
+        <h3>Formularios</h3>
+        <FORM action="">
+            <Label for="Nombre">Nombre:</Label>
+            <input type="text" name="Nombre" id="Nombre" placeholder="Escribe tu nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="Nombre" placeholder="Escribe tu contraseña" required>
+            <br>
+            <label for="date">Fecha de nacimiento</label>
+            <input type="date" name="Fecha" id="Fecha" placeholder="Fecha de nacimiento" required>
+            <br>
+            <label for="number">Edad:</label>
+            <input type="number" name="number" id="number" min="0" max="10">
+            <br>
+            <LAbel for="URL">Redes Sociales:</LAbel>
+            <input type="URL" name="URL" id="URL" required>
+            <br>
+            <label for="color"> Color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="time"> Tiempo:</label>
+            <input type="time" name="time" id="time">
+            <br>
+            <label for="file" >Sube un archivo:</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <hr>
+            <Label for="telefono" > Telefono:</Label>
+            <input type="tel" name="telefono" id="telefono">
+            <br>
+            <label for="buscar">buscar:</label>
+            <input type="search" name="buscar" id="buscar">
+            <br>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar">
+
+        </FORM>
 
     </body>
 </html>
