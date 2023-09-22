@@ -9,12 +9,12 @@
     <title>Receta</title>
 </head>
 <body>
-    <h3>RECETA SPAGHETTI VERDE</h3>
+    <h1 id="inicio">RECETA SPAGHETTI VERDE</h1>
     <p>El Espagueti Verde con pollo y chile poblano es una receta mexicana exquisita y picosita. <br>La combinación del pollo con espagueti verde hacen que esta receta tenga un sabor diferente <br>a las pasta preparadas tradicionalmente.</p>
     <img src="espagueti-verde-con-pollo-1.jpg" alt="Spaghetti" width="500" height="400">
     <p>Si buscabas una manera para saber como hacer pechuga de pollo con espagueti verde, <br> en esta pagina te guiaremos paso a paso para que la puedas disfrutar.</p>
     <br>
-    <h2>UTENSILIOS</h2>
+    <h3>UTENSILIOS</h3>
     
     <ul>
         <li>Sarten</li>
@@ -24,7 +24,7 @@
         <li>Colador</li>
     </ul>
     <br>
-    <h2>INGREDIENTES</h2>
+    <h3>INGREDIENTES</h3>
     
     <ul>
         <li>200 gramos de espagueti</li>
@@ -40,7 +40,7 @@
         <li>Calorías: 412 calorías por cada 100 gramos</li>
     </ul>
     <br>
-    <h2>¿CÓMO HACER ESPAGUETI VERDE CON POLLO?</h2>
+    <h3>¿CÓMO HACER ESPAGUETI VERDE CON POLLO?</h3>
     <ol>
         <li>Primero, ponemos a calentar agua en una olla una vez comienza a hervir agregamos media cucharadita de sal y los espaguetis. <br>Los cocinamos según el tiempo indicado en el recipiente de la pasta.</li>
         <br>
@@ -54,16 +54,74 @@
         <br>
         <li>Finalmente, nuestra receta de espagueti verde con pechuga de pollo esta lista para servirse, <br> Otra combinación exquisita de esta receta es el espagueti verde con pollo y elote.</li>
     </ol>
-    <h2>NOTAS</h2>
+    <h3>NOTAS</h3>
+    <ul>
+        <li>Sazona con sal y pimienta al gusto. Ten cuidado con la sal, ya que el queso parmesano que agregarás a continuación también es salado.</li>
+        <li>Sirve los espaguetis verdes en platos individuales y espolvorea con queso parmesano rallado al gusto.</li>
+        <li>Si lo deseas, puedes decorar los platos con algunas hojas frescas de espinacas o albahaca para dar un toque final de color verde.</li>
+    </ul>
+    <h3>INFORMACIÓN NUTRIMENTAL</h3>
+    <table border="1">
+        <head>
+            <th colspan="6">Spaghetti Verde (porción típica de 100 gramos)</th>
+            <tr>
+                <th>Calorias</th>
+                <th>Grasa total</th>
+                <th>Grasa saturada</th>
+                <th>Carbohidratos</th>
+                <th>Azucares</th>
+                <th>Proteína</th>
+            </tr>
+        </head>
+        <body>
+            <tr>
+                <td>Aproximadamente 150 kcal</td>
+                <td>Alrededor de 1 gramo</td>
+                <td>Menos de 1 gramo</td>
+                <td>Alrededor de 30 gramos</td>
+                <td>Alrededor de 2 gramos</td>
+                <td>Alrededor de 5 gramos</td>
+            </tr>
+        </body>
+    </table>
+    <h3>¿QUIERES OTRA RECETA?, CONTACTANOS:</h3>
+    <form onsubmit="mostrarAlerta(); return false;">
+        <fieldset>
+            <legend>Contacto</legend>
 
+            <label>Nombre:</label>
 
+            <input type="text" name="Nombre" id="Nombre" placeholder="tu nombre" required>
+            <br>
+            <br>
+            <label>Email:</label>
+
+            <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com " required>
+
+            <p>Comentario</p>
+            <textarea name="texto" id="texto" cols="20" rows="5"></textarea>
+            <br>
+            <input type="submit" name="Enviar" id="Enviar">
+        </fieldset>
+    </form>
+    <a href="https://github.com/UpqrooCool/Programacion-web" target="-blank"> Ir a la pagina de administrador</a> <a>|</a> <a href="#inicio">Ir al inicio</a>
+    <script>
+        function mostrarAlerta() {
+            
+            alert("¡Formulario enviado con éxito!");
+            document.getElementById("Nombre").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("texto").value = "";
+            window.scrollTo(0, 0); // Desplazar al inicio de la página
+        }
+    </script>
     
     
 </body>
 <style>
-    h3{
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    h1, h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+    
 </style>
 </html>
