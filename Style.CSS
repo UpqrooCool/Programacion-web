@@ -1,0 +1,40 @@
+*{
+    font-size: large;
+}
+p{
+    color: blueviolet;
+    border: 1px solid palegoldenrod;
+}
+#Texto{ 
+    color: brown;
+}
+.Texto-verde{
+    color: green;
+}
+.centro {
+    text-align: center;
+}
+h1{
+    color: rgb(200, 166, 39);
+    border: 1px solid red;
+}
+body{
+    background-image: url();
+    background-repeat: no-repeat;
+}
+body{
+    background-color: rgb(98, 125, 125);
+    margin: 10px;
+    
+}
+.margin1{
+    margin: 40px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    margin-right: 100px;
+    border: 1px solid  black ;
+
+}
+.margin1 > p{
+    margin: 15px;
+}
