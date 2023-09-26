@@ -9,15 +9,41 @@
 <body>
     <div class="container">
         <div class="box header">  
-            <h1>Receta de Spaghetti Verde</h1>
+            <h1 class="Centro">Receta de Spaghetti Verde</h1>
         </div>
 
         <div class="box article">     
-            <h1>Article</h1>    
+            <h1>INGREDIENTES</h1>
+            <ul>
+                <li>200 gramos de espagueti</li>
+                <li>2 chiles poblanos sin piel ni semilla</li>
+                <li>Una pechuga de pollo</li>
+                <li>1 diente de ajo</li>
+                <li>200 mililitros de crema de leche</li>
+                <li>1 cucharada de aceite</li>
+                <li>½ cucharadita de Sal</li>
+                <br>
+                <li>Tiempo de Preparación: 5 minutos</li>
+                <li>Tiempo de Cocción: 20 minutos</li>
+                <li>Calorías: 412 calorías por cada 100 gramos</li>
+            </ul>  
         </div>
 
-        <div class="box article">
-            <h1>Article</h1>
+        <div class="box article2">
+            <h1>¿CÓMO HACER SPAGHETTI VERDE?</h1>
+            <ol>
+                <li>Primero, ponemos a calentar agua en una olla una vez comienza a hervir agregamos media cucharadita de sal y los espaguetis. <br>Los cocinamos según el tiempo indicado en el recipiente de la pasta.</li>
+                <br>
+                <li>Mientras la pasta se cocina ponemos a tatemar o asar nuestros chiles poblanos. También cortaremos nuestra pechuga de pollo en trocitos pequeños. <br>Además quitaremos la piel y las semillas de los chiles para cortarlos en rajas.</li>
+                <br>
+                <li>Luego, en una sartén pondremos a calentar una cucharada de aceite y un ajo picado, después añadiremos el pollo en trocitos y lo sazonamos con sal. <br> Lo tapamos y dejamos cocinar con su propio vapor.</li>
+                <br>
+                <li>Mientras el pollo se cocina en una licuadora pondremos la crema de leche y las rajas de un chile poblano para licuarlo. A continuación <br>, en el sartén donde estamos cocinando el pollo, pondremos las rajas del otro chile poblano y revolvemos. Después hacemos un espacio en el centro y agregamos </li>
+                <br>
+                <li>Por ultimo, abrimos un espacio en centro y adicionamos el espagueti para luego mezclarlo y verificar el sazonado.</li>
+                <br>
+                <li>Finalmente, nuestra receta de espagueti verde con pechuga de pollo esta lista para servirse, <br> Otra combinación exquisita de esta receta es el espagueti verde con pollo y elote.</li>
+            </ol>
         </div>
 
         <div class="box aside">
@@ -25,7 +51,37 @@
         </div>
             
         <div class="box footer">
-            <h1>Footer</h1>
+            <h1>¿QUIERES OTRA RECETA?, CONTACTANOS:</h1>
+            <form onsubmit="mostrarAlerta(); return false;">
+                <fieldset>
+                    <legend>Contacto</legend>
+        
+                    <label>Nombre:</label>
+        
+                    <input type="text" name="Nombre" id="Nombre" placeholder="tu nombre" required>
+                    <br>
+                    <br>
+                    <label>Email:</label>
+        
+                    <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com " required>
+        
+                    <p>Comentario</p>
+                    <textarea name="texto" id="texto" cols="20" rows="5"></textarea>
+                    <br>
+                    <input type="submit" name="Enviar" id="Enviar">
+                </fieldset>
+            </form>
+            
+            <script>
+                function mostrarAlerta() {
+                    
+                    alert("¡Formulario enviado con éxito!");
+                    document.getElementById("Nombre").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("texto").value = "";
+                    window.scrollTo(0, 0); // Desplazar al inicio de la página
+                }
+            </script>
         </div>
 
     </div>

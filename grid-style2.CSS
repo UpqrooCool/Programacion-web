@@ -2,7 +2,7 @@ body{
     margin: 40px;   
 }
 .box{
-    background-color: #96f199;
+    background-color: #50f156;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -12,23 +12,28 @@ body{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     background-color: #fff;
     grid-gap: 15px;
     color: #444;
+    align-content: start;
 }
 
 .header{
     grid-column:  1/6;
+    
 }
 
 .article{
     grid-column: 1/5;
 }
+.article2{
+    grid-column: 1/6;
+}
 
 .aside{
     grid-column: 5/6;
-    grid-row: 2/4;
+    grid-row: 2/3;
 }
 
 .footer{
@@ -36,5 +41,14 @@ body{
 }
 
 h1{
-    color: rgb(0, 69, 16);
+    color: rgb(0, 0, 0);
+    
 }
+.Centro{
+    text-align: center;
+}
+
+ul, ol{
+    color: #014d2c;
+}
+
