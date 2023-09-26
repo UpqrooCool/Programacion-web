@@ -1,19 +1,23 @@
 body{
-    margin: 40px;   
+    margin: 40px;
+    background-color: #014d2c; 
 }
 .box{
-    background-color: #50f156;
+    background-color: #97f99a;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
 }
 
+.footer{
+    color: black;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    background-color: #fff;
+    background-color: #014d2c;;
     grid-gap: 15px;
     color: #444;
     align-content: start;
@@ -26,6 +30,7 @@ body{
 
 .article{
     grid-column: 1/5;
+    justify-content: center;
 }
 .article2{
     grid-column: 1/6;
@@ -44,11 +49,21 @@ h1{
     color: rgb(0, 0, 0);
     
 }
-.Centro{
+.Titulo{
     text-align: center;
 }
 
-ul, ol{
+ul, ol, th, tr, p{
     color: #014d2c;
 }
+
+textarea{
+    width: 1222px;
+    height: 122px;
+}
+ 
+#Nombre, #email, #texto{
+    background-color: #c3f8c5;
+}
+
 
