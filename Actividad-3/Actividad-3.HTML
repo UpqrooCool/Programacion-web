@@ -3,10 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Icon" href="">
-    <title>Document</title>
-</head>
-<body>
+    <title>Actividad 3</title>
+    <link rel="Icon" href="UniWeb.Icon.png">
+    <link rel="stylesheet" href="Style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>  
+    <div class="navbar">
+        <div class="container flex">
+            <img src="Uni.png" alt="alumnos" id="imagen">
+            <!-- <h1 class="logo">U N I W E B</h1> -->
+            <nav>
+                <ul>
+
+                    <li class="nav">
+                        <a href="" class="outline"> Inicio</a>
+                    </li>
+
+                    <li class="nav">
+                        <a href="" class="outline">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <section class="showcase">
+        <div class="container">
+            <div class="grid">
+                <div class="grid-item-1">
+                    <div class="showcase-text">
+                        <h1>Universidades</h1>
+                        <p class="supporting-text">
+                            Nuestra plataforma está diseñada pensando en ti, para hacer que la búsqueda de la universidad perfecta sea emocionante y sin complicaciones. 
+                        </p>
+                    </div>
+                    <div class="showcase-form">
+                        
+                        <p>¡Vamos juntos en este viaje educativo!</p>
+                        <br>
+                        <br>
+                        <form action="">
+                            <input type="submit" class="btn" value="VER UNIVERSIDADES">
+
+                        </form>
+
+                        <!-- <label >Busqueda:</label>
+                        <input type="search" name="search" id="Buscar" placeholder="  Buscar universidad"> -->
+                    </div>
+                </div>
+                <div class="grid-item-2">
+                    <div class="imagen">
+                        <img src="University.png" alt="" srcset="">
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="lower-container container">
+        <h1 class="title-section"> Beneficios de UniWeb</h1>
+        <section class="stats">
+            <div class="flex">
+                <div class="stat">
+                    <i class="fa fa-shield-alt fa-2x"></i>
+                    <h3 class="title">Seguridad</h3>
+                    <p class="text">
+                        Nuestra plataforma implementa medidas de seguridad de última generación para proteger la privacidad y los datos de los usuarios.                    </p>
+                </div>
+
+                <div class="stat">
+                    <i class="fa fa-user fa-2x"></i>
+                    <h3 class="title">Experiencia de Usuario Intuitiva </h3>
+                    <br>
+                    <p class="text">
+                        Disfruta de una interfaz fácil de usar que facilita la navegación y la búsqueda de información relevante.
+                    </p>
+                </div>
+
+                <div class="stat">
+                    <i class="fa fa-book-open fa-2x"></i>
+                    <h3 class="title">Exploración de Programas Académicos</h3>
+                    <p class="text">
+                        Examina detalladamente los programas académicos ofrecidos por cada universidad, ayudándote a tomar decisiones informadas sobre tu carrera.
+                    </p>
+                </div>
+            </div>
+        </section>
+      
+    </div>
+    <div class="container">
+        <h1 class="title-section">Comentarios:</h1>
+    </div>
+    <section class="testimonials">
+        
+        <div class="container">
+            <div class="testimonial grid-3">
+                <div class="card">
+                    <div class="circle">
+                        <img src="Maria.jpg" alt="">
+                    </div>
+                    <h3 class="title-card">María</h3>
+                    <p class="Parrafo">
+                        ¡Uni Web simplificó mi elección universitaria! Las pruebas vocacionales fueron clave, y los comentarios de otros estudiantes fueron oro puro. Gracias por hacerlo fácil.                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <img src="José.png" alt="">
+                    </div>
+                    <h3 class="title-card">Jose</h3>
+                    <p class="Parrafo">
+                        ¡Uni Web simplificó mi elección universitaria! Las pruebas vocacionales fueron clave, y los comentarios de otros estudiantes fueron oro puro. Gracias por hacerlo fácil.                    </p>
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="circle">
+                        <img src="Josefina.png" alt="">
+                    </div>
+                    <h3 class="title-card">Josefina</h3>
+                    <p class="Parrafo">
+                        Explorar universidades en Cancún fue rápido con Uni Web. Información clara, reseñas útiles. ¡Recomiendo para tomar decisiones informadas!                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="box-footer">
+        <h1 class="title-section">¡Su opinión nos importa!</h1>
+        <form onsubmit="mostrarAlerta(); return false;" class="contenido">
+            <div class="form-group">
+                <label for="Nombre" class="label">Nombre:</label>
+                <input type="text" name="Nombre" id="Nombre" class="input-field" placeholder="Tu nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="email" id="email" class="input-field" placeholder="ejemplo@gmail.com" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="texto" class="label">Comentario:</label>
+                <textarea name="texto" id="texto" class="textarea-field" cols="60" rows="5"></textarea>
+            </div>
+    
+            <input type="submit" name="Enviar" id="Enviar"  >
+        </form>
+        <script>
+            function mostrarAlerta() {
+                
+                alert("¡Formulario enviado con éxito!");
+                document.getElementById("Nombre").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("texto").value = "";
+                window.scrollTo(0, 0); // Desplazar al inicio de la página
+            }
+        </script>
+    </div>  
+    
+    <footer>
+        <div class="container grid-3">
+            <div class="copyright">
+                <h3>U N I W E B</h3>
+                <P>copyright &copy; 2023</P>
+            </div>
+            <nav class="links">
+                <ul>
+                    <li><a href="#" class="outline"> Home</a></li>
+                    <li><a href="#" class="outline"> Acerca de</a></li>
+                    <li><a href="mailto:202200444@upqroo.edu.mx" class="outline"> Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="porfiles">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
